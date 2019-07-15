@@ -89,4 +89,46 @@ Three main classes of meta-features have been proposed:
 
 ## Papers (NAS)
 
+<!-- Masking NAS more efficient -->
+<details>
+<summary>
+ <a href="https://arxiv.org/abs/1807.11626">MnasNet: Platform-Aware Neural Architecture Search for Mobile
+</a> 
+</summary>
+ <b> Focus on making NAS more efficient</b>
+ This paper discusses modifies existing NAS algorithms in two ways:
+<ol>
+
+<li> Multi-objective Reward:<br>
+
+Unlike previous work where the common method is to treat T as a hard constraint and maximize accuracy under this constraint:<br>
+
+maximize ACC(m) subject to LAT(m)≤T                <br>                               
+     m
+
+where Acc(m) is the accuracy of the model and LAT(m) is the inference latency of the model. LAT(m) is therefore treated as the hard constraint and accuracy is maximized under this constraint.
+But, the problem with this approach is that it maximizes a single metric (ACC) and does not provide multiple Pareto optimal solutions (state of allocation of resources from which it is impossible to reallocate so as to make any one individual or preference criterion better off without making at least one individual or preference criterion worse off). <br>
+The problem now now be re-framed as finding multiple Pareto-optimal solutions within a single architecture search.
+[K. Deb. Multi-objective optimization. Search methodologies, pages 403–449, 2014.] provides multiple methods to solve this type of problem, but the one chosen by this paper is <br>
+
+
+
+
+maximize ACC(m)×[LAT(m)/T]w                  <br> 				
+      m
+
+where w is the weight factor defined as:
+
+w= α,if LAT(m)≤T
+      β,otherwise <br>
+
+where α and  β are picked according to the trade-off between accuracy and inference latency.  As a hard constraint (not allowing the latency to increase beyond the constraint, severely penalizing if it does so) α= 0, β=−1 may be chosen. But, this paper uses α= -0.07, β=−0.07 as the constraint (soft constraint) in order to smoothly adjust the constraints.
+</li>
+
+ 
+ 
+ 
+ 
+</details>
+
 ## Plan 
