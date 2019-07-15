@@ -7,4 +7,6 @@
 <summary>
  <a href="https://arxiv.org/abs/1809.00287">Learning to Navigate for Fine-grained Classification</a> 
 </summary>
-Summarize the paper here ...</details>
+This paper is about meta-learning. </details>
+
+## Plan 
