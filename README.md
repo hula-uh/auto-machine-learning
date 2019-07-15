@@ -120,12 +120,30 @@ maximize ACC(m)×[LAT(m)/T]^w wrt m                  <br>
 where w is the weight factor defined as:
 
 w= α,if LAT(m)≤T<br>
-   β,otherwise <br>
+  <pre> β,otherwise </pre> <br>
 
 where α and β are picked according to the trade-off between accuracy and inference latency.  As a hard constraint (not allowing the latency to increase beyond the constraint, severely penalizing if it does so) α= 0, β=−1 may be chosen. But, this paper uses α= -0.07, β=−0.07 as the constraint (soft constraint) in order to smoothly adjust the constraints.
 </li>
 
- 
+<li> Factorized hierarchical search space: <br>
+
+Past work search for a complex cell(s) and replicate them to form full architectures. This work focuses on dividing the architectures into blocks and searching for operations and connections within these blocks separately with the intention that given the input and output shape of a block, we want to get the best accuracy-latency tradeoff.<br>
+
+Within each block, the following are searched:
+<ul>
+
+<li>Convolutional ops ConvOp: regular conv (conv), depthwiseconv (dconv), and mobile inverted bottleneck conv </li>
+<li>Convolutional kernel sizeKernelSize: 3x3, 5x5.•Squeeze-and-excitation [13] ratioSERatio: 0, 0.25.</li>
+<li>Skip opsSkipOp: pooling, identity residual, or no skip </li>
+<li>Output filter size Fi.</li>
+<li>Number of layers per block Ni</li>
+</ul>
+
+</ol>
+Reinforcement learning (with an RNN agent) approach is adopted for navigating through search space. (Paper says that RL is easy to use but other techniques like evolution also will work). Similar work as is references [35, 36, 25, 20] of this paper.<br>
+
+Training is performed on the ImageNet and the COCO detection datasets and reported accuracies of the best performing models are 75.6% and 66% respectively versus state-of-the-art accuracies of 72% and 60.3% of MobileNetV2.
+
  
  
  
