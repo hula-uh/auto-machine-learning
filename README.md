@@ -56,8 +56,8 @@ Work in progress!</b>
 
 <ol>
 <li>
-<h1>Metalearning: Concepts and Systems
-</h1>
+<h2>Metalearning: Concepts and Systems
+</h2>
 <b>Base learning</b> is the successive application of a learner on the same data. No knowledge is extracted over domains.
 With <b> Meta learning</b> the focus is on accumulating experience from previous tasks and applying them to a learning system.<br>
 Metalearning covers both declarative and procedural bias. The following is ideally performed in order:
