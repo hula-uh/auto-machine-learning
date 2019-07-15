@@ -5,7 +5,7 @@
 ## Papers
 <details>
 <summary>
- <a href="https://arxiv.org/abs/1809.00287">Methods for Improving Bayesian Optimization for AutoML
+ <a href="https://ml.informatik.uni-freiburg.de/papers/15-AUTOML-AutoML.pdf">Methods for Improving Bayesian Optimization for AutoML
 (AutoSklearn paper)
 </a> 
 </summary>
