@@ -32,9 +32,9 @@ The models considered within the search space include:
   <li> Ensemble methods (4)</li>
  </ul>
  </li>
- <p>Preprocessing:</p>
-<p>Data preprocessing: Scaling inputs, imputation of missing values and balancing target classes.</p>
-<p>Feature preprocessing: 11 possible methods which include Feature Selection (2), Kernel approximation (2), matrix decomposition (3), Embeddings (3), feature clustering (1), methods using classifier for feature selection (2).</p>
+ Preprocessing:<br>
+Data preprocessing: Scaling inputs, imputation of missing values and balancing target classes.<br>
+Feature preprocessing: 11 possible methods which include Feature Selection (2), Kernel approximation (2), matrix decomposition (3), Embeddings (3), feature clustering (1), methods using classifier for feature selection (2).
 <li> Automated construction of ensembles of Models evaluated during optimization:
 The idea behind the construction of Ensembles is that ensembles perform well if the models are individually strong and make uncorrelated errors. Ensemble selection method is outlined in Caruana et al. (2004).
 </li>
