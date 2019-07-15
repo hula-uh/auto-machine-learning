@@ -120,7 +120,7 @@ maximize ACC(m)×[LAT(m)/T]^w wrt m                  <br>
 where w is the weight factor defined as:
 
 w= α,if LAT(m)≤T<br>
-  <pre> β,otherwise </pre> <br>
+   <&nbsp>β,otherwise </&nbsp><br>
 
 where α and β are picked according to the trade-off between accuracy and inference latency.  As a hard constraint (not allowing the latency to increase beyond the constraint, severely penalizing if it does so) α= 0, β=−1 may be chosen. But, this paper uses α= -0.07, β=−0.07 as the constraint (soft constraint) in order to smoothly adjust the constraints.
 </li>
