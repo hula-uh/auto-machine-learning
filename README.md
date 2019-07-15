@@ -39,7 +39,7 @@ Feature preprocessing: 11 possible methods which include Feature Selection (2), 
 The idea behind the construction of Ensembles is that ensembles perform well if the models are individually strong and make uncorrelated errors. Ensemble selection method is outlined in Caruana et al. (2004).
 </li>
  </ol>
- <p>The benefit of AutoSkleran over AutoWEKA comes from meta-learning and ensemble construction. The version of AutoSklern without the above two is called vanilla AutoSklearn. Experiments are performed to see how the above mentioned techniques can benefit performance. The following are observed from the experiments:</p>
+ The benefit of AutoSkleran over AutoWEKA comes from meta-learning and ensemble construction. The version of AutoSklern without the above two is called vanilla AutoSklearn. Experiments are performed to see how the above mentioned techniques can benefit performance. The following are observed from the experiments:<br>
  <ol>
  <li> Meta-learning yields drastic improvements from the first configuration till the end of experiments.</li>
  <li> Although Vanilla AutoSklearn and AutoSklearn (with meta-learning) both show improved performance with ensembles, ensembles with meta-learning yields performance gains faster than Vanilla AutoSklearn. </li>
