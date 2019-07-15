@@ -46,6 +46,47 @@ The idea behind the construction of Ensembles is that ensembles perform well if 
  </ol>
 </details>
 
+<details>
+<summary>
+ <a href="https://link-springer-com.ezproxy.lib.uh.edu/content/pdf/10.1007%2F978-3-540-73263-1.pdf">Metalearning: Applications to Data Mining (Book on Meta learning)
+</a> 
+</summary>
+ <b>This is a book on metalearning. Each chapter will be summarized. <br>
+Work in progress!</b>
+
+<ol>
+<li>
+<h1>Metalearning: Concepts and Systems
+</h1>
+<b>Base learning</b> is the successive application of a learner on the same data. No knowledge is extracted over domains.
+With <b> Meta learning</b> the focus is on accumulating experience from previous tasks and applying them to a learning system.<br>
+Metalearning covers both declarative and procedural bias. The following is ideally performed in order:
+<ol>
+<li> Obtain dataset.</li>
+<li> Extract meta-features</li>
+<li>From the <b>meta knowledge database</b> containing the ML/DL algos (initial bias), Datasets along with their respective meta-features and their performance, the matching and search is performed with the new dataset</li>
+<li> The smaller search space is obtained with the new bias</li>
+<li> Evaluation and selection of the search space is performed with a suitable evaluation strategy</li>
+<li> Best algorithm is chosen</li>
+</ol> 
+Effectiveness of search space depends on the quality of the available meta-knowledge.
+ <p><b>Generation of meta-features</b></p>
+Three main classes of meta-features have been proposed:
+<ul>
+<li> Statistical and information-theoretic characterization: Number of classes, number of features, Ratio of examples to features, degree of correlation between features and target, Average class entropy.</li>
+<li> Exploit properties of some induced hypothesis: For example, construct decision trees on each dataset and get it’s properties to form meta features.</li>
+<li> Use many simple and fast learners on the datasets and use the accuracy of these “landmarks” to characterize the datasets. Example, k-NN has been used at the meta level to identify most similar datasets for a given input dataset.</li>
+</ul>
+</p>
+
+
+</ol>
+
+ 
+ 
+ </details>
+
+
 ## Papers (NAS)
 
 ## Plan 
