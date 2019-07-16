@@ -134,8 +134,8 @@ Within each block, the following are searched:
 
 <li>Convolutional ops ConvOp: regular conv (conv), depthwiseconv (dconv), and mobile inverted bottleneck conv </li>
 <li>Convolutional kernel sizeKernelSize: 3x3, 5x5.</li>
- <li>Squeeze-and-excitation [13] ratioSERatio: 0, 0.25.</li>
-<li>Skip opsSkipOp: pooling, identity residual, or no skip </li>
+ <li>Squeeze-and-excitation [for more information on this technique refer reference 13 of this paper] ratioSERatio: 0, 0.25.</li>
+<li>Skip ops SkipOp: pooling, identity residual, or no skip </li>
 <li>Output filter size Fi.</li>
 <li>Number of layers per block Ni</li>
 </ul>
