@@ -81,10 +81,47 @@ Three main classes of meta-features have been proposed:
 
 
 </ol>
-
- 
- 
  </details>
+ 
+ <details>
+<summary>
+ <a href="https://link.springer.com/chapter/10.1007/978-3-540-24844-6_90">Comparison of Instances Seletion Algorithms I. Algorithms Survey
+</a> 
+</summary>
+This paper provides a survey of all the instance selection algorithms. 
+This is the paper that introduces AutoSklearn.
+Instance selection algorithms are classified bassed on three broad categories:
+<ol>
+ <li><b> Noise filters: </b> 
+  <ul>
+   <li> ENN (Edited nearest neighbor): Idea is to remove datas points from a class if it does not agree with majority points in that class.</li>
+   <li> Repeated ENN: ENN repeated till changes are made to the dataset.
+   </li>
+   <li> All k-NN: ENN repeated for k=1,2,....</li>
+   <li> ENRBF: Edited normalized RBF.</li>
+   </li>
+  </ul>
+ <li> <b> Condensation Algorithms</b>
+  <ul>
+   <li> Condensed Nearest Neighbor rule (CNN): Starts new dataset. If one added datapoint is wrongly classified using new dataset, this dataspoint is added </li>
+   <li> Reduced Nearest Neighbor (RNN): Like CNN, but rejects datapoints that do not decrease accuracy.</li>
+   <li> IB3: A new datapoint is added only if the nearest datpoint has a different class. </li>
+   <li> GE/RNGE: Builds Gabriel graphs </li>
+   <li> ICF (Iterative Case Filtering): Uses "reachability" and "convergence" of data points.</li>
+   <li> ENRBF2: Based on NRBF.   </li>
+   <li> DROP1-5: New datapoint is added only if the new addition does not change classification of the instances.</li>
+   </li>
+  </ul>
+  <li> <b> Prototype Selection: </b>
+ Knowledge representation approach.
+ <ul>
+  <li> Learning Vectors Quantization</li>
+  <li> Monte Carlo 1 and Random Mutation Hill Climbing.</li>
+  <li> Encoding length- ELH, ELHGrow and Explore</li>
+ </ul>
+ </ol>
+ All the algorithms can be classified in a broader sense as Incremental (starting from 1 datapoint), Decremental (Removing unnecessary datapoints from original dataset) or mixed (combination of Incremental and Decremental).
+</details>
 
 
 ## Papers (NAS)
