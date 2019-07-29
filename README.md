@@ -89,7 +89,7 @@ Three main classes of meta-features have been proposed:
 </a> 
 </summary>
 This paper provides a survey of all the instance selection algorithms. 
-This is the paper that introduces AutoSklearn.
+ Used in the context of subsampling data point space (proxy Auto ML).
 Instance selection algorithms are classified bassed on three broad categories:
 <ol>
  <li><b> Noise filters: </b> 
