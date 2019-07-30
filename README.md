@@ -143,7 +143,7 @@ Instance selection algorithms are classified bassed on three broad categories:
   <li> Parameters compared include accuracy, reduction ((|T|-|S|)/|T|) and effectiveness= accuracy * Reduction. </li>
   <li> 10 fold CV is used.</li>
   <li> Average accuracy of LDIS is higher than the mean accuracy achieved by all the other techniques. </li>
-  <li> LDIS achieves highest reduction in most datasets. </li>
+  <li> LDIS achieves highest reduction in most datasets (reduction rates are in the order of 0.60 to 0.88). </li>
   <li> LDIS has highest average effectiveness. </li>
   <li> Runtime of LDIS is least in all the datasets. </li>
  </ul>
