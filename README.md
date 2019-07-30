@@ -123,6 +123,34 @@ Instance selection algorithms are classified bassed on three broad categories:
  All the algorithms can be classified in a broader sense as Incremental (starting from 1 datapoint), Decremental (Removing unnecessary datapoints from original dataset) or mixed (combination of Incremental and Decremental).
 </details>
 
+ <details>
+<summary>
+ <a href="http://www.inf.ufrgs.br/~jlcarbonera/wp-content/uploads/4459a549.pdf">A novel density-based approach for instance selection
+</a> 
+</summary>
+ There is a youtube video associated with this paper. Refer  <a href="https://www.youtube.com/watch?v=BqD2HJs7Am8&pbjreload=10"> this </a>
+ So far all the instance selection techniques work on identifying and preserving the border points, but this is a very time expensive procedure. LDIS (Local density based instance selection) proposed by this paper anlyses datapoints from each class seperately and presesves only the densest points in the neighborhood. This reduces time complexity. <br>
+ <b>Intuition: </b> Instances that have a high concentration of other instances of the same class near them represent more information about the surroundings than the points surrounding them and hence these instances need to be preserved. <br>
+ <b> Strategy: </b> Thwo key terminologies rae introduced: 
+ <ol>
+  <li> Density : Local density of instance x relative to P, where P is a subset of the whole dataset. </li>
+   <li> Partial k-neighborhood: Represents the k Nearest neighbors of x with the same class label as x. </li>
+ </ol>
+ The algorithm picks an instance from a class and checks its partial k-neighborhood (k as selected by the user) to see if any instance has a higher density than the instance. If not true, that instance is retained. <br>
+ <b> Experimental Results: </b>
+ <ul>
+  <li> Performance of LDIS is compared with DROP3, ENN, ICF, LSBo and LSSm (Popular instance selection techniques) with 15 well known datasets.</li>
+  <li> Parameters compared include accuracy, reduction ((|T|-|S|)/|T|) and effectiveness= accuracy * Reduction. </li>
+  <li> 10 fold CV is used.</li>
+  <li> Average accuracy of LDIS is higher than the mean accuracy achieved by all the other techniques. </li>
+  <li> LDIS achieves highest reduction in most datasets. </li>
+  <li> LDIS has highest average effectiveness. </li>
+  <li> Runtime of LDIS is least in all the datasets. </li>
+ </ul>
+</details>
+
+
+
 
 ## Papers (NAS)
 
