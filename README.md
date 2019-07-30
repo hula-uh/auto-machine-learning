@@ -131,7 +131,7 @@ Instance selection algorithms are classified bassed on three broad categories:
  There is a youtube video associated with this paper. Refer  <a href="https://www.youtube.com/watch?v=BqD2HJs7Am8&pbjreload=10"> this. </a><br>
  So far all the instance selection techniques work on identifying and preserving the border points, but this is a very time expensive procedure. LDIS (Local density based instance selection) proposed by this paper anlyses datapoints from each class seperately and presesves only the densest points in the neighborhood. This reduces time complexity. <br>
  <b>Intuition: </b> Instances that have a high concentration of other instances of the same class near them represent more information about the surroundings than the points surrounding them and hence these instances need to be preserved. <br>
- <b> Strategy: </b> Thwo key terminologies rae introduced: 
+ <b> Strategy: </b> Two key terminologies are introduced: 
  <ol>
   <li> Density : Local density of instance x relative to P, where P is a subset of the whole dataset. </li>
    <li> Partial k-neighborhood: Represents the k Nearest neighbors of x with the same class label as x. </li>
