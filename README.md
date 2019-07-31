@@ -147,6 +147,7 @@ Instance selection algorithms are classified bassed on three broad categories:
   <li> LDIS has highest average effectiveness. </li>
   <li> Runtime of LDIS is least in all the datasets. </li>
  </ul>
+ Note that there are two versions of this algorithm, LDIS and CDIS. The only difference between the two is the formula for density. While LDIS doesn't account for the centroid in a cluster, CDIS does. 
 </details>
 
 
